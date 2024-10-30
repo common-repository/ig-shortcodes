@@ -1,0 +1,73 @@
+$btn-font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+$btn-font-weight: 400;
+$btn-font-size: 15px;
+$btn-line-height: 24px;
+/*Button*/
+body a.ig-button {
+$btn-colors: (
+  "alert": #fa9915,
+  "error": #e8543f,
+  "notice": #00b5e5,
+  "success": #8fcf00,
+) !default;
+@each $btn-colors-type, $color in $btn-colors {
+    &.#{$btn-colors-type} {
+        background: $color!important;
+        border: 1px solid darken($color, 10%)!important;
+        color:  lighten($color, 40%)!important;
+        &.clean {
+            background: none!important;
+            color: $color!important;
+            -webkit-box-shadow:none;
+            -moz-box-shadow:none;
+            box-shadow:none;
+        }
+        &.pill {
+            @include border-top-radius (50px);
+            @include border-bottom-radius (50px);
+            -webkit-box-shadow: inset 1px 0px 2px 0px lighten($color, 15%);
+            -moz-box-shadow: inset 1px 0px 2px 0px lighten($color, 15%);
+            box-shadow: inset 1px 0px 2px 0px lighten($color, 15%);
+        }
+        &.puffy {
+            border-bottom: 4px solid darken($color, 15%)!important;
+            -webkit-box-shadow: inset 1px 0px 2px 0px lighten($color, 15%);
+            -moz-box-shadow: inset 1px 0px 2px 0px lighten($color, 15%);
+            box-shadow: inset 1px 0px 2px 0px lighten($color, 15%);
+        }
+        &.flat {
+            border-color: $color!important;
+        }
+    }
+}
+//burtton    
+    background: #3d3d3d;
+    color: #aaa;
+    border: 1px solid #222;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    line-height: $btn-line-height;
+    padding:($btn-line-height / 4) ($btn-line-height / 1.5);
+    font-weight: $btn-font-weight;
+    font-size: $btn-font-size;
+    font-family: $btn-font-family;
+    margin: 5px 1px;
+    text-decoration: none;
+    text-align: center;
+    @include border-top-radius (2px);
+    @include border-bottom-radius (2px);
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+    }
+    &:hover, &:focus {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,23 @@
+/*Login*/
+#ig-login {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    label {
+        display: block;
+        font-weight: bold;
+    }
+    input#user_pass,
+    input#user_login {
+        width: 100%;
+    }
+    .login-password,
+    .login-username {
+        @include span-columns(6);
+    }
+    .login-remember,
+    .login-submit {
+        @include span-columns(12);
+        @include span-columns(12);
+    }
+ }

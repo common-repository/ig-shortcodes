@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+Shortcodes
+--------------------------------------------------------------*/
+@import 'bourbon';
+@import 'neat';
+//BUTTONS
+@import 'sass/buttons';
+//DIVIDER
+@import 'sass/divider';
+//NOTICE
+@import 'sass/notice';
+//MAP
+@import 'sass/map';
+//TABS
+@import 'sass/tab';
+//TOGGLE
+@import 'sass/toggle';
+//ACCORDION
+@import 'sass/accordion';
+//BADGES
+@import 'sass/badge';
+//COLUMNS
+@import 'sass/column';
+//PROGRESS BAR
+@import 'sass/progress-bar';
+//MODAL
+@import 'sass/modal';
+//LOGIN
+@import 'sass/login';
+//PROTECT
+@import 'sass/protect';
+//TOOLTIP
+@import 'sass/tooltip';
+
+/***************************************
+CSS Responsive Document */
+@media screen and (max-width: 480px) {
+  .ig-col,
+  #ig-login .login-password,
+  #ig-login .login-username {
+    width: 100% !important;
+  }
+}
+

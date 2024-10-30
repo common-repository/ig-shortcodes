@@ -1,0 +1,37 @@
+.ig-tooltip-item {
+  border-bottom: 1px dashed #e5e5e5;
+  display: inline-block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+
+  &:focus,
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 3em;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    background: #fff;
+    border: 1px solid #dedede;
+    color: #666;
+    font-size: 0.9em; // Make sure you use -webkit-backface-visibility: hidden; on the body element to prevent 1px nudging bugs.
+    line-height: 1.5em;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 10;
+    p {
+      margin: 0;
+    }
+  }
+}

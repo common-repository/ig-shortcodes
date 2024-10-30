@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.ig-intro li,
+.ig-footer li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.ig-intro li:last-child,
+.ig-footer li:last-child {
+  margin-right: 0;
+}
+
+.ig-intro li:nth-child(2n),
+.ig-footer li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.ig-intro li:nth-child(2n+1),
+.ig-footer li:nth-child(2n+1) {
+  clear: left;
+}
+
+.ig-intro li {
+  text-align: left;
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #dedede;
+}
+
+.ig-intro li h2 {
+  margin: 0;
+  text-align: left;
+}
+
+.ig-intro li.evidence {
+  border-color: #fc3;
+}
+
+.ig-intro li.evidence .button-upgrade {
+  background: #fc3;
+  border: 1px solid #e6ac00;
+  -webkit-box-shadow: 0 1px #e6ac00;
+  box-shadow: 0 1px #e6ac00;
+  -moz-box-shadow: 0 1px #e6ac00;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #5d4b16;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  display: inline-block;
+  background: #fc3;
+  color: #5d4b16;
+}
+
+.ig-intro li.evidence .button-upgrade:hover, .ig-intro li.evidence .button-upgrade:focus {
+  background: #fd3;
+  color: #5d4b16;
+  border-color: #ffc61a;
+}
+
+@media screen and (max-width: 782px) {
+  .ig-intro li,
+  .ig-footer li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .ig-intro li:last-child,
+  .ig-footer li:last-child {
+    margin-right: 0;
+  }
+}

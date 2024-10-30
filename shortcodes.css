@@ -1,0 +1,1079 @@
+/*--------------------------------------------------------------
+Shortcodes
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*Button*/
+body a.ig-button {
+  background: #3d3d3d;
+  color: #aaa;
+  border: 1px solid #222;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  line-height: 24px;
+  padding: 6px 16px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  margin: 5px 1px;
+  text-decoration: none;
+  text-align: center;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+body a.ig-button.alert {
+  background: #fa9915 !important;
+  border: 1px solid #d77e05 !important;
+  color: #fef0dd !important;
+}
+
+body a.ig-button.alert.clean {
+  background: none !important;
+  color: #fa9915 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body a.ig-button.alert.pill {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #fcba60;
+  -moz-box-shadow: inset 1px 0px 2px 0px #fcba60;
+  box-shadow: inset 1px 0px 2px 0px #fcba60;
+}
+
+body a.ig-button.alert.puffy {
+  border-bottom: 4px solid #be6f04 !important;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #fcba60;
+  -moz-box-shadow: inset 1px 0px 2px 0px #fcba60;
+  box-shadow: inset 1px 0px 2px 0px #fcba60;
+}
+
+body a.ig-button.alert.flat {
+  border-color: #fa9915 !important;
+}
+
+body a.ig-button.error {
+  background: #e8543f !important;
+  border: 1px solid #da321a !important;
+  color: #fef6f5 !important;
+}
+
+body a.ig-button.error.clean {
+  background: none !important;
+  color: #e8543f !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body a.ig-button.error.pill {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #f09183;
+  -moz-box-shadow: inset 1px 0px 2px 0px #f09183;
+  box-shadow: inset 1px 0px 2px 0px #f09183;
+}
+
+body a.ig-button.error.puffy {
+  border-bottom: 4px solid #c32d17 !important;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #f09183;
+  -moz-box-shadow: inset 1px 0px 2px 0px #f09183;
+  box-shadow: inset 1px 0px 2px 0px #f09183;
+}
+
+body a.ig-button.error.flat {
+  border-color: #e8543f !important;
+}
+
+body a.ig-button.notice {
+  background: #00b5e5 !important;
+  border: 1px solid #008db2 !important;
+  color: #b2efff !important;
+}
+
+body a.ig-button.notice.clean {
+  background: none !important;
+  color: #00b5e5 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body a.ig-button.notice.pill {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #33d4ff;
+  -moz-box-shadow: inset 1px 0px 2px 0px #33d4ff;
+  box-shadow: inset 1px 0px 2px 0px #33d4ff;
+}
+
+body a.ig-button.notice.puffy {
+  border-bottom: 4px solid #007999 !important;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #33d4ff;
+  -moz-box-shadow: inset 1px 0px 2px 0px #33d4ff;
+  box-shadow: inset 1px 0px 2px 0px #33d4ff;
+}
+
+body a.ig-button.notice.flat {
+  border-color: #00b5e5 !important;
+}
+
+body a.ig-button.success {
+  background: #8fcf00 !important;
+  border: 1px solid #6c9c00 !important;
+  color: #e0ff9c !important;
+}
+
+body a.ig-button.success.clean {
+  background: none !important;
+  color: #8fcf00 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+body a.ig-button.success.pill {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #b9ff1d;
+  -moz-box-shadow: inset 1px 0px 2px 0px #b9ff1d;
+  box-shadow: inset 1px 0px 2px 0px #b9ff1d;
+}
+
+body a.ig-button.success.puffy {
+  border-bottom: 4px solid #5a8300 !important;
+  -webkit-box-shadow: inset 1px 0px 2px 0px #b9ff1d;
+  -moz-box-shadow: inset 1px 0px 2px 0px #b9ff1d;
+  box-shadow: inset 1px 0px 2px 0px #b9ff1d;
+}
+
+body a.ig-button.success.flat {
+  border-color: #8fcf00 !important;
+}
+
+body a.ig-button:hover, body a.ig-button:focus, body a.ig-button:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body a.ig-button:hover, body a.ig-button:focus {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+/*Divider*/
+.ig-divider {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+  display: block;
+  background: none;
+  border-bottom: 1px solid #dedede;
+}
+
+.ig-divider.fade {
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #dedede 25%, #dedede 75%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, #dedede), color-stop(75%, #dedede), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #dedede 25%, #dedede 75%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #dedede 25%, #dedede 75%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #dedede 25%, #dedede 75%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #dedede 25%, #dedede 75%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+  border-bottom: none;
+}
+
+.ig-divider.dotted {
+  background: none;
+  border-bottom: 2px dotted #dedede;
+}
+
+.ig-divider.dashed {
+  background: none;
+  border-bottom: 1px dashed #dedede;
+}
+
+/*Notice*/
+.ig-notice-alert {
+  background-color: #fff6bf;
+  color: #66624c;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.ig-notice-alert a {
+  color: #4d4a39;
+  text-decoration: underline;
+}
+
+.ig-notice-alert a:focus, .ig-notice-alert a:hover {
+  color: #1a1913;
+}
+
+.ig-notice-error {
+  background-color: #fbe3e4;
+  color: #645b5b;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.ig-notice-error a {
+  color: #4b4444;
+  text-decoration: underline;
+}
+
+.ig-notice-error a:focus, .ig-notice-error a:hover {
+  color: #191717;
+}
+
+.ig-notice-notice {
+  background-color: #e5edf8;
+  color: #5c5f63;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.ig-notice-notice a {
+  color: #45474a;
+  text-decoration: underline;
+}
+
+.ig-notice-notice a:focus, .ig-notice-notice a:hover {
+  color: #171819;
+}
+
+.ig-notice-success {
+  background-color: #e6efc2;
+  color: #5c604e;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.ig-notice-success a {
+  color: #45483a;
+  text-decoration: underline;
+}
+
+.ig-notice-success a:focus, .ig-notice-success a:hover {
+  color: #171813;
+}
+
+.ig-map {
+  margin: 15px 0;
+}
+
+.ig-accordion-tabs {
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.ig-accordion-tabs::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (max-width: 40em) {
+  .ig-accordion-tabs {
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.ig-accordion-tabs .tab-header-and-content {
+  list-style: none;
+}
+
+@media screen and (min-width: 40em) {
+  .ig-accordion-tabs .tab-header-and-content {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .ig-accordion-tabs .tab-header-and-content:first-child .tab-link {
+    border-top: 0;
+  }
+}
+
+.ig-accordion-tabs .tab-link {
+  background-color: #f6f6f6;
+  border-top: 1px solid #e5e5e5;
+  color: #888;
+  display: block;
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 40em) {
+  .ig-accordion-tabs .tab-link {
+    border-top: 0;
+    display: inline-block;
+  }
+}
+
+.ig-accordion-tabs .tab-link:hover {
+  color: #555;
+}
+
+.ig-accordion-tabs .tab-link:focus {
+  outline: none;
+}
+
+.ig-accordion-tabs .tab-link.is-active {
+  color: #444;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media screen and (min-width: 40em) {
+  .ig-accordion-tabs .tab-link.is-active {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-bottom-color: #fff;
+    margin-bottom: -1px;
+  }
+}
+
+.ig-accordion-tabs .tab-content {
+  background: #fff;
+  display: none;
+  padding: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .ig-accordion-tabs .tab-content {
+    border: 1px solid #e5e5e5;
+    float: left;
+  }
+}
+
+.ig-expander {
+  width: 100%;
+}
+
+.ig-expander .expander-trigger {
+  border-bottom: 1px solid #e5e5e5;
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  text-decoration: none;
+  user-select: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.ig-expander .expander-trigger::before {
+  content: "\25BC";
+  color: #dedede;
+  font-size: 13px;
+  vertical-align: middle;
+  float: left;
+  margin-right: 5px;
+}
+
+.ig-expander .expander-hidden::before {
+  content: "\25BA";
+}
+
+.ig-expander .expander-hidden + .expander-content {
+  display: none;
+}
+
+.ig-accordion {
+  background-color: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  margin: 5px 0 15px 0;
+  padding: 0;
+}
+
+.ig-accordion ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ig-accordion li {
+  border-bottom: 1px solid #e5e5e5;
+  list-style: none;
+}
+
+.ig-accordion li > .content {
+  padding: 15px;
+  display: block;
+}
+
+.ig-accordion li > a {
+  color: #444;
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.ig-accordion li:last-child {
+  border: 0;
+}
+
+.ig-accordion li:focus, .ig-accordion li:hover {
+  background-color: #f9f9f9;
+}
+
+.ig-accordion ul.submenu {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ig-accordion ul.submenu li {
+  background-color: #fff;
+}
+
+.ig-accordion ul.submenu li:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
+.ig-accordion ul.submenu li:focus, .ig-accordion ul.submenu li:hover {
+  background-color: #fff;
+}
+
+.ig-accordion .is-expanded {
+  display: block;
+  padding-bottom: 0;
+}
+
+.ig-badge {
+  display: inline-block;
+  margin: 5px 1px;
+}
+
+.ig-badge .badge-alert {
+  background-color: #fff6bf;
+  border-radius: 3.75em;
+  color: #8c7800;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.ig-badge .badge-default {
+  background-color: #999;
+  border-radius: 3.75em;
+  color: black;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.ig-badge .badge-error {
+  background-color: #fbe3e4;
+  border-radius: 3.75em;
+  color: #97161b;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.ig-badge .badge-notice {
+  background-color: #e5edf8;
+  border-radius: 3.75em;
+  color: #244e87;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.ig-badge .badge-success {
+  background-color: #e6efc2;
+  border-radius: 3.75em;
+  color: #56651a;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.ig-columns {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ig-columns::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.ig-columns .ig-col {
+  padding: 5px 0 5px 0;
+}
+
+.ig-columns .twelve {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+}
+
+.ig-columns .twelve:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .eleven {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+}
+
+.ig-columns .eleven:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .ten {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+
+.ig-columns .ten:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .nine {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+
+.ig-columns .nine:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .eight {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+
+.ig-columns .eight:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .seven {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+
+.ig-columns .seven:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .six {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.ig-columns .six:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .five {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+
+.ig-columns .five:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .four {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+
+.ig-columns .four:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .three {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+
+.ig-columns .three:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .two {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+
+.ig-columns .two:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .one {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+}
+
+.ig-columns .one:last-child {
+  margin-right: 0;
+}
+
+.ig-columns .last {
+  margin-right: 0;
+}
+
+.ig-progress-bar {
+  background-color: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: inset 0 0 3px 0 rgba(119, 119, 119, 0.15);
+  height: 40px;
+  margin: 5px auto;
+  padding: 2px;
+  width: 100%;
+  clear: both;
+}
+
+.ig-progress-bar > span.meter {
+  animation: progress .5s linear infinite;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%);
+  background-repeat: repeat-x;
+  background-size: 40px 40px;
+  border: 1px solid #e5e5e5;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+}
+
+.ig-progress-bar > span.meter.alert {
+  background-color: #fa9915;
+}
+
+.ig-progress-bar > span.meter.notice {
+  background-color: #00b5e5;
+}
+
+.ig-progress-bar > span.meter.error {
+  background-color: #e8543f;
+}
+
+.ig-progress-bar > span.meter.success {
+  background-color: #8fcf00;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+@-moz-keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+@-ms-keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+@-o-keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+.ig-modal label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.ig-modal label img {
+  border-radius: 150px;
+  display: block;
+  max-width: 300px;
+}
+
+.ig-modal .modal-state {
+  display: none;
+}
+
+.ig-modal .modal-trigger {
+  padding: 0.8em 1em;
+}
+
+.ig-modal .modal-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  transition: opacity 0.25s ease;
+  visibility: hidden;
+  z-index: 99999999999;
+}
+
+@media screen and (min-width: 53.75em) {
+  .ig-modal .modal-fade-screen {
+    padding-top: 10em;
+  }
+}
+
+.ig-modal .modal-fade-screen .modal-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.ig-modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ig-modal .modal-close::after, .ig-modal .modal-close::before {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 0;
+  left: 50%;
+  height: 1.5em;
+  width: 0.15em;
+  background: #ddd;
+  content: "";
+  display: block;
+  margin: -3px 0 0 -1px;
+  transform: rotate(45deg);
+}
+
+.ig-modal .modal-close:hover::after, .ig-modal .modal-close:hover::before {
+  background: #c4c4c4;
+}
+
+.ig-modal .modal-close::before {
+  transform: rotate(-45deg);
+}
+
+.ig-modal .modal-inner {
+  background: #fff;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 0;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  transition: opacity 0.25s ease;
+  width: 95%;
+}
+
+@media screen and (min-width: 40em) {
+  .ig-modal .modal-inner {
+    max-height: 70%;
+    padding: 3em;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 53.75em) {
+  .ig-modal .modal-inner {
+    width: 50%;
+  }
+}
+
+.ig-modal .modal-inner h1 {
+  color: #333;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.ig-modal .modal-inner p {
+  color: #333;
+  line-height: 1.5em;
+}
+
+.ig-modal .modal-inner .modal-intro {
+  margin-bottom: 1em;
+}
+
+.ig-modal .modal-inner .modal-content {
+  color: #333;
+}
+
+@media screen and (min-width: 40em) {
+  .ig-modal .modal-inner .modal-content {
+    columns: 2 8em;
+  }
+}
+
+.ig-modal .modal-inner a.cta {
+  color: #fff;
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+
+.ig-modal .modal-inner a.cta:last-child {
+  padding: 0 2em;
+}
+
+.ig-modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ig-modal .modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em;
+}
+
+.ig-modal-open {
+  overflow: hidden;
+}
+
+/*Login*/
+#ig-login {
+  display: inline-block;
+  width: 100%;
+  clear: both;
+}
+
+#ig-login label {
+  display: block;
+  font-weight: bold;
+}
+
+#ig-login input#user_pass,
+#ig-login input#user_login {
+  width: 100%;
+}
+
+#ig-login .login-password,
+#ig-login .login-username {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+#ig-login .login-password:last-child,
+#ig-login .login-username:last-child {
+  margin-right: 0;
+}
+
+#ig-login .login-remember,
+#ig-login .login-submit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+#ig-login .login-remember:last-child,
+#ig-login .login-submit:last-child {
+  margin-right: 0;
+}
+
+#ig-login .login-remember:last-child,
+#ig-login .login-submit:last-child {
+  margin-right: 0;
+}
+
+/*Protect*/
+.ig-protect {
+  border: 1px solid #dedede;
+  background: #f9f9f9;
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(100%, #f5f5f5));
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background: -o-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  padding: 1em;
+  margin: 1em 0;
+  display: block;
+  width: 100%;
+}
+
+.ig-protect .genericon-key {
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px;
+  border: 1px solid #F7CA18;
+  background: #F5D76E;
+  margin-right: 8px;
+  color: #fefff4;
+  margin-right: 8px;
+}
+
+.ig-tooltip-item {
+  border-bottom: 1px dashed #e5e5e5;
+  display: inline-block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ig-tooltip-item:focus,
+.ig-tooltip-item:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ig-tooltip-item .tooltip {
+  position: absolute;
+  bottom: 3em;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  background: #fff;
+  border: 1px solid #dedede;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  opacity: 0;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.ig-tooltip-item .tooltip p {
+  margin: 0;
+}
+
+/***************************************
+CSS Responsive Document */
+@media screen and (max-width: 480px) {
+  .ig-col,
+  #ig-login .login-password,
+  #ig-login .login-username {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,58 @@
+.ig-accordion {
+  background-color: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  margin: 5px 0 15px 0;
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-bottom: 1px solid #e5e5e5;
+    list-style: none;
+    > .content {
+        padding: 15px;
+        display: block;
+    }  
+    > a {
+      color: #444;
+      display: block;
+      padding: 10px 15px;
+      font-weight: bold;
+      text-decoration: none;
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      box-shadow:none;
+    }
+    &:last-child {
+      border: 0;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  ul.submenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background-color: #fff;
+      &:first-child {
+        border-top: 1px solid #e5e5e5;
+      }
+      &:focus,
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  .is-expanded {
+    display: block;
+    padding-bottom: 0;
+  }
+}
